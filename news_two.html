@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>about</title>
+    <script src="js/angular.min.js"></script>
+    <link href="css/base.css" rel="stylesheet">
+    <script src="js/js.js"></script>
+    <script>
+        var myApp = angular.module("myApp",[]);
+        myApp.controller("newsCtrl",function($scope){
+            $scope.data2Top = [
+                {title:"第九届全球药品监管机构首脑峰会在北京召开","new":"2014年11月19日，第九届全球药品监管机构首脑峰会在北京隆重召开，来自美国、欧盟、澳大利亚、日本、金砖国家、世界卫生组织等25个国家和国际组织的药品监管机构负责人出席了此次全球...","time":"2015-12-08"},
+                {title:"边振甲会见美国食品药品管理局助理局长一行","new":"2013年12月12日，国家食品药品监督管理总局党组成员边振甲同志会见了美国食品药品管理局助理局长琳达•托尔夫森一行。双方交流了中美两国食品安全监 管情况，讨论了食品安全监管法规...","time":"2016-07-08"}
+            ];
+            $scope.data2 = [
+                {"new":"医改驱动医疗服务领域遍地开花 结构性机会频现","time":"2016.05.23"},
+                {"new":"国务院：推进异地就医结算 构建新医疗薪酬制度","time":"2016.04.07"},
+                {"new":"2015年度药品审评报告","time":"2016.03.04"},
+                {"new":"于文明副局长出席国务院政策例行吹风会解读《中医药发展战略规划纲要（2016—2030年）》","time":"2016.02.23"},
+                {"new":"首个国家级规划为中医药发展创机遇","time":"2016.02.23"},
+                {"new":"食品药品监管总局公开征求对药品经营质量管理规范修订的意见","time":"2016.02.22"},
+                {"new":"关于暂停执行2015年1号公告药品电子监管有关规定的公告（2016年第40号）","time":"2016.02.22"},
+                {"new":"中医药法（草案）全文征求意见","time":"2016.01.20"},
+                {"new":"中医药法草案:个人可通过考核获中医医师资格并开诊所","time":"2015.12.21"},
+                {"new":"“互联网+”将深刻影响传统医药行业","time":"2015.12.18"},
+                {"new":"90药企惊恐撤回药品注册，震荡药圈！","time":"2015.12.07"}
+
+            ];
+            });
+    </script>
+</head>
+<body ng-controller="newsCtrl">
+<div class="top">
+    <div class="banner-bg about-top-bg">
+        <div class="module"></div>
+        <div class="nav fr">
+            <div class="nav-shadow"></div>
+            <div  id="showId" class="top-nav">
+                <h2><a class="aColor" href="index.html">首页<span>home</span></a><img class="hover" src="images/nav-hover_02.png">
+                    <ul></ul>
+                </h2>
+                <h2 class="show1"><a class="aColor" href="news_one.html">新闻中心<span>news</span></a><img class="hover show" src="images/nav-hover_02.png">
+                    <ul class="subNav subNavNews">
+                        <span></span>
+                        <i></i>
+                        <li><a href="news_one.html">药业新闻</a></li>
+                        <li class="sanjiao"><a href="news_two.html">行业动态</a></li>
+                        <li><a href="news_three.html">党团建设</a></li>
+                        <li><a href="news_four.html">股票信息</a></li>
+                        <li><a href="news_five.html">视频信息</a></li>
+                    </ul>
+                </h2>
+                <h2><a class="aColor" href="product_one.html">产品中心<span>product</span></a><img class="hover" src="images/nav-hover_02.png">
+                    <ul class="subNav subNav2">
+                        <span></span>
+                        <i></i>
+                        <li><a href="product_one.html">药品系列</a></li>
+                        <li><a href="product_two.html">葡萄酒系列</a></li>
+                        <li><a href="product_three.html">化妆品系列</a></li>
+                        <li><a href="product_all.html">所有产品</a></li>
+                    </ul>
+                </h2>
+                <h2><a class="aColor" href="consult_one.html">咨询中心<span>consulting</span></a><img class="hover" src="images/nav-hover_02.png">
+                    <ul class="subNav subNav3">
+                        <span></span>
+                        <i></i>
+                        <li><a href="consult_one.html">常见问题</a></li>
+                        <li><a href="consult_two.html">留言板</a></li>
+                        <li><a href="consult_three.html">厂检下载</a></li>
+                        <li><a href="consult_four.html">关于我们</a></li>
+                    </ul>
+                </h2>
+                <h2><a class="aColor" href="recruit_one.html">招聘中心<span>recruit</span></a><img class="hover" src="images/nav-hover_02.png">
+                    <ul class="subNav subNav4">
+                        <span></span>
+                        <i></i>
+                        <li><a href="recruit_one.html">人才战略</a></li>
+                        <li><a href="recruit_two.html">最新招聘</a></li>
+                        <li><a href="recruit_three.html">毛遂自荐</a></li>
+                    </ul>
+                </h2>
+                <h2><a class="aColor" href="about_one.html">关于我们<span>about us</span></a><img class="hover" src="images/nav-hover_02.png">
+                    <ul class="subNav subNav5">
+                        <span></span>
+                        <i></i>
+                        <li><a href="about_one.html">万通风采</a></li>
+                        <li><a href="about_two.html">企业文化</a></li>
+                        <li><a href="about_three.html">产品研发</a></li>
+                    </ul>
+                </h2>
+            </div>
+            <i><img src="images/nav-bg_01.png"></i>
+        </div>
+        <div class="logo">
+            <img src="images/top-logo_03.png">
+            <h2>吉林万通药业集团</h2>
+            <p>Jilin WanTong Pharmaceutical Group</p>
+        </div>
+    </div>
+</div>
+<div class="about-content news-content">
+    <div class="inner clearfix">
+        <div class="subnav fl">
+            <ul id="submenu">
+                <li class="show"><a href="news_one.html">药业新闻<span>movment</span></a></li>
+                <li><a href="news_two.html" class="bianse">行业动态<span>about</span></a><i class="hoverNav"></i></li>
+                <li><a href="news_three.html">党团建设<span>party</span></a></li>
+                <li><a href="news_four.html">股票信息<span>shares</span></a></li>
+                <li><a href="news_five.html">视频信息<span>video</span></a></li>
+            </ul>
+        </div>
+        <div class="content-r fl">
+            <div class="pageHeader">您的位置 - <a href="index.html">首页</a> - <a href="news_one.html">新闻中心</a> - <span>行业动态</span></div>
+            <div class="titleA">
+                <h2>行业动态<span>news</span></h2>
+            </div>
+            <div class="content_bg clearfix">
+                <img src="images/news-pic2.jpg">
+                <div class="text fl">
+                    <div class="textTab" ng-repeat="content in data2Top">
+                        <h2><a href="#">{{content.title}}</a></h2>
+                        <p>{{content.new}}</p>
+                        <br><span><a href="#">{{content.time}}</a></span>
+                    </div>
+                </div>
+            </div>
+            <div class="content-b">
+                <ul ng-repeat="content in data2">
+                    <li><a href="#">{{content.new}}<span>{{content.time}}</span></a></li>
+                </ul>
+                <div class="pageA clearfix">
+                    <ul>
+                        <li class="active">1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                    </ul>
+                    <p>第一页</p>
+                    <p>最后一页</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="module"></div>
+    <div class="footer-content inner">
+        <p>版权所有：通化万通药业股份有限公司 Copyright © 2016 wtyy.com. All rights reserved.</p>
+        <p>公司地址：吉林省通化市万通路66号|联系电话：0435-3945555|传真：0435-3315425|邮箱：webmaster@wtyy.com</p>
+        <p>互联网药品信息服务资格证书号：（吉）-非经营性-2013-0006      网站ICP备案序号：吉ICP备13003052号</p>
+    </div>
+</div>
+</body>
+</html>
